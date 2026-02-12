@@ -8,7 +8,7 @@ bcrypt
 pyjwt
 httpx
 stripe
-google-genai
+google-generativeai
 google-auth
 requests
 python-multipart
