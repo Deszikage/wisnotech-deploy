@@ -1,0 +1,139 @@
+{
+  "identity": {
+    "designer": "E1",
+    "philosophy": "Fusion over Imitation. Emotion First. Content is King.",
+    "anti_patterns": [
+      "Purple/Teal gradients (Use Blue/Amber instead)",
+      "Inter font for headings (Use Outfit)",
+      "Center-everything layouts",
+      "Generic 'Bootstrap' columns"
+    ]
+  },
+  "brand": {
+    "name": "Wisnotech",
+    "tone": "Professional, Empowering, Tech-Forward, Trustworthy",
+    "colors": {
+      "primary": "#2563eb",
+      "primary_foreground": "#ffffff",
+      "secondary": "#0f172a",
+      "secondary_foreground": "#f8fafc",
+      "accent": "#f59e0b",
+      "accent_foreground": "#0f172a",
+      "background": "#020617",
+      "surface": "#0f172a",
+      "muted": "#1e293b",
+      "border": "rgba(148, 163, 184, 0.1)"
+    },
+    "typography": {
+      "headings": {
+        "font_family": "Outfit, sans-serif",
+        "weights": ["500", "700"],
+        "usage": "Use for all H1-H6. Tight tracking (-0.02em)."
+      },
+      "body": {
+        "font_family": "Manrope, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "Use for paragraphs, labels, and UI text."
+      }
+    }
+  },
+  "theme_strategy": {
+    "mode": "dark",
+    "style": "Glassmorphism + Tech Utility",
+    "rules": [
+      "Background is #020617 (Slate 950), NOT pure black.",
+      "Cards use 'Crystal Glass' effect: bg-slate-900/50, backdrop-blur-md, border-white/10.",
+      "Glows: Use localized radial gradients behind key elements (Blue/Amber).",
+      "Borders: 1px solid border-white/5 is mandatory for all cards."
+    ]
+  },
+  "layout_strategies": {
+    "marketing": {
+      "grid": "Tetris Grid (Asymmetric)",
+      "spacing": "Generous (p-8 to p-24)",
+      "hero": "Split screen: Text Left, Interactive/Image Right (bleeding edge).",
+      "features": "Bento Grid: Mix of 1x1, 2x1, and 2x2 cells."
+    },
+    "dashboard": {
+      "grid": "High Density Bento",
+      "spacing": "Compact (p-4 to p-6)",
+      "structure": "Sidebar Navigation + Topbar + Content Grid.",
+      "widgets": "Glass containers with sharp or slightly rounded corners (rounded-lg)."
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl",
+    "gradients": "Radial gradients only. No linear full-screen gradients.",
+    "textures": "Add subtle noise overlay (opacity-5) to background if possible.",
+    "motion": {
+      "library": "framer-motion",
+      "scroll": "lenis (smooth scrolling)",
+      "entrance": "Staggered fade-up for lists.",
+      "hover": "Scale 1.02 + Brightness 1.1 + Border Color Shift."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white rounded-full px-8 py-3 hover:bg-blue-600 transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]",
+      "secondary": "bg-white/10 text-white rounded-full px-8 py-3 hover:bg-white/20 backdrop-blur-md border border-white/10",
+      "accent": "bg-accent text-slate-900 rounded-full px-6 py-2 font-bold hover:bg-amber-400"
+    },
+    "cards": {
+      "marketing": "rounded-2xl bg-slate-900/40 border border-slate-800 backdrop-blur-sm hover:border-blue-500/30 transition-colors",
+      "dashboard": "rounded-xl bg-slate-900/60 border border-slate-800"
+    },
+    "inputs": {
+      "style": "bg-slate-950/50 border-slate-800 focus:border-blue-500 rounded-lg h-12"
+    }
+  },
+  "image_assets": {
+    "hero_main": {
+      "url": "https://images.unsplash.com/photo-1739300293396-9ad79111c8e4?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Wisnotech Team Collaboration",
+      "usage": "Hero section main image or About Us header"
+    },
+    "student_hero": {
+      "url": "https://images.unsplash.com/photo-1651796704084-a115817945b2?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Happy Student with Laptop",
+      "usage": "Testimonials or Registration CTA"
+    },
+    "course_web_dev": {
+      "url": "https://images.unsplash.com/photo-1753998943918-dd2dfc4ee6ed?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Web Development Code Screen",
+      "usage": "Web Development Course Card"
+    },
+    "course_app_dev": {
+      "url": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "App Development Mobile Interface",
+      "usage": "App Development Course Card"
+    },
+    "diversity_group": {
+      "url": "https://images.unsplash.com/photo-1739303987830-ca19742b19bc?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Women in Tech",
+      "usage": "Community or Diversity Section"
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "Stroke width 1.5px. Use color-accent for active states."
+  },
+  "instructions_to_main_agent": [
+    "Install 'framer-motion' and '@studio-freight/lenis' (or just 'lenis') for smooth interactions.",
+    "Use 'Outfit' font for all headings. Import from Google Fonts.",
+    "Use 'Manrope' font for all body text. Import from Google Fonts.",
+    "Implement the Theme Toggle but default to DARK mode as per user request.",
+    "For the 'Services' section, use a horizontal scroll or a grid with hover effects.",
+    "Ensure 'Student Dashboard' has a distinct layout (Sidebar + Header) compared to Marketing pages.",
+    "Use the provided image URLs. DO NOT use placeholders.",
+    "Contact Info: contact@wisnotech.com | +234 915 354 1297 | No. 7 Forest Guard Street, Uromi, Edo State",
+    "Pricing: Web Dev (200k), App Dev (200k), UI/UX (100k)."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use generic gradients.",
+    "Avoid 'Inter' for headings.",
+    "Use 2x more padding than you think is necessary.",
+    "Glassmorphism requires a border to be visible.",
+    "Always add hover states to interactive elements.",
+    "Respect the 'Mobile First' constraint: Stack grids on mobile."
+  ]
+}
