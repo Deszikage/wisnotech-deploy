@@ -264,10 +264,14 @@ async def google_login(data: GoogleLoginRequest, response: Response):
             "created_at": datetime.now(timezone.utc).isoformat()
         })
 
-        # Set Cookie
+       # Set Cookie
         response.set_cookie(
-            key="session_token", value=session_token,
-            httponly=True, secure=True, samesite="lax", path="/",
+            key="session_token", 
+            value=session_token,
+            httponly=True, 
+            secure=True,     # Required for samesite="none"
+            samesite="none", # Changed from "lax" to allow cross-site login
+            path="/",
             max_age=7*24*60*60
         )
 
