@@ -1,1 +1,17 @@
-fastapi uvicorn motor python-dotenv pydantic pydantic[email] bcrypt pyjwt httpx stripe google-generativeai google-auth requests python-multipart jinja2 email-validator
+fastapi
+uvicorn
+motor
+python-dotenv
+pydantic
+pydantic[email]
+bcrypt
+pyjwt
+httpx
+stripe
+google-genai
+google-auth
+requests
+python-multipart
+jinja2
+email-validator
+gunicorn
