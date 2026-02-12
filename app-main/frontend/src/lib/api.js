@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${API_URL}/api`;
+// 1. Hardcode the backend URL directly (No environment variables for now)
+const API_URL = 'https://wisnotech-deploy.onrender.com';
+const API = `${API_URL}/api`; 
 
 const api = axios.create({
   baseURL: API,
