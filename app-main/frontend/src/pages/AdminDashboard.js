@@ -104,6 +104,15 @@ export default function AdminDashboard() {
               <t.icon className="w-4 h-4 mb-1" /> {t.label}
             </button>
           ))}
+
+<button
+  onClick={logout}
+  className="flex-1 min-w-[60px] flex flex-col items-center py-2 text-xs text-red-400"
+>
+  <LogOut className="w-4 h-4 mb-1" />
+  Logout
+</button>
+
         </div>
 
         {/* Main Content */}
